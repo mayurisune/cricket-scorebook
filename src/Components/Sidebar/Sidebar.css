@@ -1,0 +1,112 @@
+.sidenavcontainer{
+  width: 300px;
+  height: 100vh;
+  position: relative;
+  color: white;
+  transition: 0.4s;
+  background-color: black;
+}
+.sidenavcontainer-NX{
+  width: 85px;
+}
+.nav-upper, .nav-heading, nav-menu, menu-item{
+  display: grid;
+}
+.nav-heading{
+  grid-template-columns: 2fr, 1fr;
+  grid-template-rows: 1fr;
+  height: 75px;
+}
+.nav-brand{
+  display: flex;
+}
+.submit{
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: auto 200px;
+  background-color: red;
+  border: 2px solid lightcoral;
+  padding: 20px;
+  border-radius: 90px;
+  height: 71px;
+  width: 74px;
+}
+.submit span{
+  display: block;
+ margin-top: 5px;
+ background-color: antiquewhite;
+ border-radius: 15px;
+ height: 4px;
+ width: 30px;
+
+ transition: 0.4s;
+}
+.submit:hover span{
+  margin: auto;
+}
+.submit-in:hover span:nth-child(1){
+  width: 25px;
+  transform: translate(-3px, 8px) rotate(30deg);
+}
+.submit-in:hover span:nth-child(2){
+ display: none;
+}
+.submit-in:hover span:nth-child(3){
+  width: 25px;
+  transform: translate(-3px, -8px) rotate(-30deg);
+}
+
+.submit-out:hover span:nth-child(1){
+  width: 25px;
+  transform: translate(0px, 8px) rotate(-30deg);
+}
+.submit-out:hover span:nth-child(2){
+ display: none;
+}
+.submit-out:hover span:nth-child(3){
+  width: 25px;
+  transform: translate(0px, -8px) rotate(-30deg);
+}
+.nav-menu{
+  grid-template-rows: repeat(7, 1fr);
+  margin-top: 50px;
+}
+.menu-item{
+  height: 57px;
+  width: 5cm;
+  display: flex;
+  color:blue;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: auto 20px;
+  position: relative;
+  border-radius: 10px;
+}
+.menu-item-NX{
+  width: 4.5em;
+  margin: auto;
+}
+.menu-item:hover{
+  background-color: red;
+}
+.menu-item img{
+  width: 30px;
+  padding: 0 20px;
+}
+.menu-item :hover> .tooltip{
+  display: block;
+}
+.tooltip{
+  display: none;
+  position: absolute;
+  left: 99%;
+  bottom: 80%;
+ width: auto;
+ padding: 8px 4px;
+ border-radius: 15px 15px 15px 0;
+ white-space: nowrap;
+ border: 2px solid lawngreen;
+ background-color: yellow;
+}
